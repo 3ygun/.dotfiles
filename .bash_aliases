@@ -81,6 +81,12 @@ alias bejs="bundle exec jekyll serve"
 # Project -- Movement, Running, etc.
 # -----------------------------------------------------------------------------
 
+# Dotfiles
+alias cdotfiles='code "$DOTFILES"'
+alias cdf='code "$DOTFILES"'
+alias vimdotfiles='vim "$DOTFILES"'
+alias vimdf='vim "$DOTFILES"'
+
 # cd Path updates >> Github, Go
 export CDPATH=.:$HOME:$GITHUBPATH:$GOPATH/src/github.com
 

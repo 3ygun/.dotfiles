@@ -19,12 +19,12 @@ if [ -f ~/.dotfiles/.bash_setup.sh ]; then
     . ~/.dotfiles/.bash_setup.sh
 fi
 
-# Get the aliases
+# Load aliases
 if [ -f ~/.dotfiles/.bash_aliases ]; then
     . ~/.dotfiles/.bash_aliases
 fi
 
-# Get keys
+# Load keys
 if [ -f ~/.keys.sh ]; then
     . ~/.keys.sh
 fi
