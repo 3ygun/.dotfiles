@@ -10,8 +10,8 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Get computer config specifics
-if [ -f ~/.specific.sh ]; then
-    . ~/.specific.sh
+if [ -f ~/.dotfiles/.specifics.sh ]; then
+    . ~/.dotfiles/.specifics.sh
 fi
 
 # Load setup
@@ -25,8 +25,8 @@ if [ -f ~/.dotfiles/.bash_aliases ]; then
 fi
 
 # Load keys
-if [ -f ~/.keys.sh ]; then
-    . ~/.keys.sh
+if [ -f ~/.dotfiles/.keys.sh ]; then
+    . ~/.dotfiles/.keys.sh
 fi
 
 
