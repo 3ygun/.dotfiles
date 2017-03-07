@@ -24,6 +24,7 @@ alias vimba='vim ~/.dotfiles/.bash_aliases'
 alias sba='source ~/.dotfiles/.bash_aliases'
 alias vimbrc='vim ~/.bashrc'
 alias sbrc='source ~/.bashrc'
+alias sdf='source ~/.bash_profile'
 
 
 
@@ -35,6 +36,7 @@ alias sbrc='source ~/.bashrc'
 alias dk="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
+alias dkrmall="docker rm $(docker ps -a -q)"
 
 # Git
 alias gs="git status"
@@ -48,10 +50,13 @@ alias grt="git remote"
 alias grm="git rm"
 alias grs="git reset"
 alias gch="git checkout"
-alias gchr="git checkout --"
 alias gpl="git pull"
 alias gph="git push"
 alias gcl="git clone"
+# Git >> Special Operations
+alias gms="git merge --squash"  # Squashes to a single commit the given <feature_branch>
+alias grmc="git rm --cached"    # Destages the given <file>
+alias gclf="git checkout --"    # Clear the given <file> of changes
 # Git >> Total Names
 alias gpull="gpl"
 alias gpush="gph"

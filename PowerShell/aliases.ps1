@@ -13,6 +13,7 @@ Set-Alias cl clear
 Set-Alias dk docker
 Set-Alias dc docker-compose
 Set-Alias dm docker-machine
+Set-Alias dkrmall func_dkrmall; function func_dkrmall () { docker rm $(docker ps -a -q) }
 
 # Git
 Set-Alias gs func_gs; function func_gs() { git status }
@@ -28,10 +29,13 @@ Set-Alias grt func_grt; function func_grt() { git remote }
 Set-Alias grm func_grm; function func_grm() { git rm }
 Set-Alias grs func_grs; function func_grs() { git reset }
 Set-Alias gch func_gch; function func_gch() { git checkout }
-Set-Alias gchr func_gchr; function func_gchr() { git checkout -- }
 Set-Alias gpl func_gpl; function func_gpl() { git pull }
 Set-Alias gph func_gph; function func_gph() { git push }
 Set-Alias gcl func_gcl; function func_gcl() { git clone }
+# Git >> Special Operations
+Set-Alias gms func_gms; function func_gms() { git merge --squash }  # Squashes to a single commit the given <feature_branch>
+Set-Alias grmc func_grmc; function func_grmc() { git rm --cached }  # Destages the given <file>
+Set-Alias gclf func_gclf; function func_gclf() { git checkout -- }  # Clear the given <file> of changes
 # Git >> Total Names
 Set-Alias gpull func_gpull; function func_gpull() { func_gpl }
 Set-Alias gpush func_gpush; function func_gpush() { func_gph }
