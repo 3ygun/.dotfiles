@@ -11,7 +11,7 @@
 
 # .dotfiles
 
-My .dotfiles for aliases, profiles and sanity
+My .dotfiles for aliases, profiles, [guides](Guides/) and sanity
 
 
 # Help

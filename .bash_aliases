@@ -62,6 +62,11 @@ alias gpull="gpl"
 alias gpush="gph"
 alias gclone="gcl"
 alias gundo="gu"
+# Git >> English Names
+alias squish="git merge --squash"   # Squashes to a single commit the given <feature_branch>
+alias destage="git rm --cached"     # Destages the given <file>
+alias clean="git checkout --"       # Clear the given <file>"
+alias cleanall="git reset --hard HEAD"     # Undo current changes
 
 # Windows
 alias exp="explorer ."
