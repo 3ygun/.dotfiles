@@ -9,3 +9,4 @@
 ## Tools
 
 - [Git](Guides/git.md)
+- [Visual Studio Code](Guides/vs-code.md)
