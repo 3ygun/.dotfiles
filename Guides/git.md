@@ -16,7 +16,7 @@ I find the need to undo things here are easy ways!
 
 Discription                         | Alias             | Command
 ---                                 | ---               | ---
-Undo current changes                | `gu`  `cleanall`  | `git reset --hard HEAD`
+Undo current changes                | `gu`  `greset`    | `git reset --hard HEAD`
 Undo last commit                    | `guc`             | `git reset --soft HEAD~1`
 Destages the given <file>           | `grmc`  `destage` | `git rm --cached <file>`
 Clear the given <file> of changes   | `gclf`  `clean`   | `git checkout -- <file>`
