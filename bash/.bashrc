@@ -10,23 +10,23 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Get computer config specifics
-if [ -f ~/.dotfiles/.specifics.sh ]; then
-    . ~/.dotfiles/.specifics.sh
+if [ -f "$DOTFILES"/bash/.specifics.sh ]; then
+    . "$DOTFILES"/bash/.specifics.sh
 fi
 
 # Load setup
-if [ -f ~/.dotfiles/.bash_setup.sh ]; then
-    . ~/.dotfiles/.bash_setup.sh
-fi
+# if [ -f "$DOTFILES"/bash/.bash_setup.sh ]; then
+#     . "$DOTFILES"/bash/.bash_setup.sh
+# fi
 
 # Load aliases
-if [ -f ~/.dotfiles/.bash_aliases ]; then
-    . ~/.dotfiles/.bash_aliases
+if [ -f "$DOTFILES"/bash/.bash_aliases ]; then
+    . "$DOTFILES"/bash/.bash_aliases
 fi
 
 # Load keys
-if [ -f ~/.dotfiles/.keys.sh ]; then
-    . ~/.dotfiles/.keys.sh
+if [ -f "$DOTFILES"/bash/.keys.sh ]; then
+    . "$DOTFILES"/bash/.keys.sh
 fi
 
 

@@ -18,10 +18,12 @@ alias cl='clear'
 alias clr='clear'
 
 # Config Editing
-alias vimbp='vim ~/.dotfiles/.bash_profile'
-alias sbp='source ~/.dotfiles/.bash_profile'
-alias vimba='vim ~/.dotfiles/.bash_aliases'
-alias sba='source ~/.dotfiles/.bash_aliases'
+alias vimbp='vim ~/.bash_profile'
+alias sbp='source ~/.bash_profile'
+alias vimba='vim "$DOTFILES"/bash/.bash_aliases'
+alias sba='source "$DOTFILES"/bash/.bash_aliases'
+alias vimbsp='vim "$DOTFILES"/bash/.specifics.sh'
+alias sbsp='source "$DOTFILES"/bash/.specifics.sh'
 alias vimbrc='vim ~/.bashrc'
 alias sbrc='source ~/.bashrc'
 alias sdf='source ~/.bash_profile'
@@ -113,4 +115,4 @@ alias cdgotb="cdgo && cd src/github.com/chelexa/trofiebot/"
 # Running
 alias goitb="goi github.com/chelexa/trofiebot/"
 alias sshosu="ssh soller@stdlinux.cse.ohio-state.edu"
-alias delk="docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -p 5000:5000 -it --name elk sebp/elk"
+# alias delk="docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -p 5000:5000 -it --name elk sebp/elk"

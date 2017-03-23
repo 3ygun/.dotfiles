@@ -1,11 +1,7 @@
 <!-- TOC -->
 
 - [.dotfiles](#dotfiles)
-- [Help](#help)
-    - [Visual Studio Code](#visual-studio-code)
 - [Install](#install)
-    - [Bash Instructions](#bash-instructions)
-    - [PowerShell Instructions](#powershell-instructions)
 
 <!-- /TOC -->
 
@@ -13,24 +9,12 @@
 
 My .dotfiles for aliases, profiles, [guides](Guides/) and sanity
 
-
-# Help
-## Visual Studio Code
-
-- Keybinding help [VSCode Editing](https://code.visualstudio.com/Docs/editor/codebasics)
-
-
 # Install
 
-Add a `DOTFILES` environment variable
-
-## Bash Instructions
-
-1. Clone to `~/`
-2. Run `cp ~/.dotfiles/.bash_profile ~/.bash_profile`
-3. Run `cp ~/.dotfiles/.bashrc ~/.bashrc`
-4. Reload terminal
-
-## PowerShell Instructions
-
-See [PowerShell README.md](PowerShell/) for detailed instructions
+1. Clone the repository, preferably, to `~/` making `~/.dotfiles`
+2. Add a `DOTFILES` environment variable pointing to the cloned repository
+    - For Bash use `export DOTFILES` (e.g. `export DOTFILES="<PathToDotfiles>\.dotfiles"`)
+    - For Windows search "Edit the system environment variables" adding a `System variable` with the path
+3. Specific instructions:
+    - [Bash README.md](bash/)
+    - [PowerShell README.md](PowerShell/)
