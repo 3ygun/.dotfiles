@@ -1,13 +1,14 @@
 <!-- TOC -->
 
-- [Install](#install)
+- [PowerShell Install](#powershell-install)
 
 <!-- /TOC -->
 
-# Install
+# PowerShell Install
 
-1. Make sure the `DOTFILES` environment variable has been configured
-2. Setup auto load:
+**NOTE**: Make sure the common install instructions are complete [see Install](README.md). Specifically, that the `DOTFILES` environment variable has been configured.
+
+1. Setup auto load:
     1. In admin PowerShell navigate to `C:/WINDOWS/system32/WindowsPowerShell/v1.0/`
     2. Execute
         ```PowerShell
@@ -16,6 +17,6 @@
         ```
     3. Restart your PowerShell
     4. Profit!
-3. Add computer specific files:
+2. Add computer specific files:
     1. Add `keys.ps1` to `$env:DOTFILES/PowerShell/keys.ps1`
     2. Add `specifics.ps1` to `$env:DOTFILES/PowerShell/specifics.ps1`

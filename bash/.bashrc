@@ -4,6 +4,11 @@
 # Move this to ~/.bashrc which will import the other files
 # -----------------------------------------------------------------------------
 
+# Get base configuration
+if [ -f ~/.base_config.sh ]; then
+    . ~/.base_config.sh
+fi
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc

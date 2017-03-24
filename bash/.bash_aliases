@@ -29,6 +29,12 @@ alias sbrc='source ~/.bashrc'
 alias sdf='source ~/.bash_profile'
 alias sdotfiles='source ~/.bash_profile'
 
+# Dotfile Setup
+alias cddf='cd "$DOTFILES"'
+alias cddotfiles='cd "$DOTFILES"'
+alias setup-bash='. "$DOTFILES"/bash/setup-bash.sh'
+alias setupbash='. "$DOTFILES"/bash/setup-bash.sh'
+
 
 
 # -----------------------------------------------------------------------------
