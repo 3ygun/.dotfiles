@@ -19,7 +19,7 @@ Discription                         | Alias             | Command
 Undo current changes                | `gu`  `greset`    | `git reset --hard HEAD`
 Undo last commit                    | `guc`             | `git reset --soft HEAD~1`
 Destages the given <file>           | `grmc`  `destage` | `git rm --cached <file>`
-Clear the given <file> of changes   | `gclf`  `clean`   | `git checkout -- <file>`
+Clear the given <file> of changes   | `gclf`  `discard` | `git checkout -- <file>`
 
 
 ### Debugging
