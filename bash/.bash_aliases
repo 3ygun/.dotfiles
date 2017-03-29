@@ -120,5 +120,4 @@ alias cdgotb="cdgo && cd src/github.com/chelexa/trofiebot/"
 
 # Running
 alias goitb="goi github.com/chelexa/trofiebot/"
-alias sshosu="ssh soller@stdlinux.cse.ohio-state.edu"
 # alias delk="docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -p 5000:5000 -it --name elk sebp/elk"
