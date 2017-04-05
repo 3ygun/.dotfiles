@@ -1,17 +1,16 @@
-<!-- TOC -->
-
-- [.dotfiles](#dotfiles)
-    - [Install](#install)
-    - [Parts](#parts)
-        - [Terminal Usage](#terminal-usage)
-        - [Editor Configuration](#editor-configuration)
-        - [Help & Guides](#help--guides)
-
-<!-- /TOC -->
-
 # .dotfiles
 
 My .dotfiles for aliases, profiles, [guides](Guides/), and sanity
+
+<!-- TOC depthFrom:2 -->
+
+- [Install](#install)
+- [Parts](#parts)
+    - [Terminal Usage](#terminal-usage)
+    - [Editor Configuration](#editor-configuration)
+    - [Help & Guides](#help--guides)
+
+<!-- /TOC -->
 
 ## Install
 
