@@ -1,6 +1,6 @@
 # .dotfiles
 
-My .dotfiles for aliases, profiles, [guides](Guides/), and sanity
+My .dotfiles for aliases, profiles, [guides](Guides/) and sanity
 
 <!-- TOC depthFrom:2 -->
 
@@ -35,7 +35,7 @@ Including aliases, profiles and keys
 
 Includes setup and settings
 
-- [VS Code](vscode/)
+- [Visual Studio Code](vscode/)
 
 ### Help & Guides
 

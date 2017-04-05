@@ -11,7 +11,7 @@
 ## Helpful Stuff
 ### Install Help
 
-See [vs-code](vscode/) for install help with parity between machines.
+See [vs-code](../vscode/) for install help with parity between machines.
 
 ### Productivity
 
