@@ -8,5 +8,5 @@
 
 ## Tools
 
-- [Git](Guides/git.md)
-- [Visual Studio Code](Guides/vs-code.md)
+- [Git](git.md)
+- [Visual Studio Code](vs-code.md)

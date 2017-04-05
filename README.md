@@ -1,15 +1,18 @@
-<!-- TOC -->
-
-- [.dotfiles](#dotfiles)
-- [Install](#install)
-
-<!-- /TOC -->
-
 # .dotfiles
 
 My .dotfiles for aliases, profiles, [guides](Guides/) and sanity
 
-# Install
+<!-- TOC depthFrom:2 -->
+
+- [Install](#install)
+- [Parts](#parts)
+    - [Terminal Usage](#terminal-usage)
+    - [Editor Configuration](#editor-configuration)
+    - [Help & Guides](#help--guides)
+
+<!-- /TOC -->
+
+## Install
 
 1. Clone the repository, preferably, to `~/` making `~/.dotfiles`
 2. Add a `DOTFILES` environment variable pointing to the cloned repository
@@ -19,3 +22,23 @@ My .dotfiles for aliases, profiles, [guides](Guides/) and sanity
 3. Specific instructions:
     - [Bash README.md](bash/)
     - [PowerShell README.md](PowerShell/)
+
+## Parts
+### Terminal Usage
+
+Including aliases, profiles and keys
+
+- [Bash](bash/)
+- [PowerShell](PowerShell/)
+
+### Editor Configuration
+
+Includes setup and settings
+
+- [Visual Studio Code](vscode/)
+
+### Help & Guides
+
+Various helpful information that should be placed on a blog later
+
+- [Guides](Guides/)
