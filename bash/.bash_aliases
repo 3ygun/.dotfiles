@@ -35,6 +35,8 @@ alias cddotfiles='cd "$DOTFILES"'
 alias setup-bash='. "$DOTFILES"/bash/setup-bash.sh'
 alias setupbash='. "$DOTFILES"/bash/setup-bash.sh'
 
+# Bash Styling
+export PS1='\n${debian_chroot:+($debian_chroot)}\e[0;32m\u\e[m \e[01;35m\w\e[m\n\$ '
 
 
 # -----------------------------------------------------------------------------
