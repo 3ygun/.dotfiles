@@ -55,6 +55,7 @@ alias ga="git add"
 alias gc="git commit"
 alias gb="git branch"
 alias gd="git diff"
+alias gdc="git diff --cached"
 alias gu="git reset --hard HEAD"     # Undo current changes
 alias guc="git reset --soft HEAD~1"  # Undo last commit
 alias grt="git remote"

@@ -22,6 +22,7 @@ Set-Alias ga func_ga; function func_ga() { git add }
 Set-Alias gco func_gc; function func_gc() { git commit }
 Set-Alias gb func_gb; function func_gb() { git branch }
 Set-Alias gd func_gd; function func_gd() { git diff }
+Set-Alias gdc func_gdc; function func_gdc() { git diff --cached }
 # Set-Alias gu func_gu; function func_gu() { git reset --hard HEAD }    # Undo current changes # Reserved PowerShell Word :'(
 Set-Alias gus func_gu; function func_gu() { git reset --hard HEAD }    # Undo current changes
 Set-Alias guc func_guc; function func_guc() { git reset --soft HEAD~1 }  # Undo last commit
