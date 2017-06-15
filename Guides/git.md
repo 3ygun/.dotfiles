@@ -20,6 +20,10 @@ Undo current changes                | `gu`  `greset`    | `git reset --hard HEAD
 Undo last commit                    | `guc`             | `git reset --soft HEAD~1`
 Destages the given <file>           | `grmc`  `destage` | `git rm --cached <file>`
 Clear the given <file> of changes   | `gclf`  `discard` | `git checkout -- <file>`
+Remove all Unstaged Tracked files ONLY  |                   | `git checkout .`
+Remove all Unstaged UnTracked files ONLY |                  | `git clean -f`
+Remove all Staged Tracked and UnStaged Tracked files ONLY |             | `git reset --hard`
+Remove all changes                  |                   | `git stash -u`          
 
 
 ### Debugging
@@ -27,6 +31,7 @@ Clear the given <file> of changes   | `gclf`  `discard` | `git checkout -- <file
 Discription                             | Alias         | Command
 ---                                     | ---           | ---
 Show how <remote> is configured locally |               | `git remote show <remote>`
+Show all <remote>s                      |               | `git remote -v`
 Fix misconfigured <remote> per branch   |               | `git branch <branch> -u <remote>/<branch>`
 
 

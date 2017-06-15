@@ -5,6 +5,16 @@
 # Terminal Management
 Set-Alias cl clear
 
+# Prompt Style
+## https://superuser.com/questions/517498/what-is-the-windows-7-equivalent-of-bashs-export-ps1-to-set-prompt-color
+function prompt
+{
+    Write-Host ""
+    Write-Host "3ygun " -NoNewline -ForegroundColor Green
+    Write-Host "$(pwd)" -ForegroundColor Magenta
+    return '$ '
+}
+
 # -----------------------------------------------------------------------------
 # Programs -- Docker, Git, etc.
 # -----------------------------------------------------------------------------
