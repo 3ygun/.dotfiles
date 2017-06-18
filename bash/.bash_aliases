@@ -6,12 +6,24 @@
 alias cd.="cd .."
 alias cd..="cd .."
 alias c.="cd .."
+alias cu='cd ..'
 
 # ls aliases
-alias ll='ls -ahlF'
-alias la='ls -lA'
-alias l='ls -CF'
-alias ls='ls -lA'
+alias ll='ls -ahlF --group-directories-first'
+alias la='ls -lA --group-directories-first'
+alias l='ls -CF --group-directories-first'
+alias ls='ls -lhA --group-directories-first'
+
+# Directory Work
+alias lsd='ls -d */'    # List folders below
+alias mkdir='mkdir -pv' # Make parent directories as needed w/ output
+
+# Copy
+alias cp='cp -iar' # Hidden files and folders too
+
+# Confirm 'mv' and 'rm'
+alias rm='rm -i'
+alias mv='mv -i'
 
 # Terminal Management
 alias cl='clear'
@@ -35,8 +47,6 @@ alias cddotfiles='cd "$DOTFILES"'
 alias setup-bash='. "$DOTFILES"/bash/setup-bash.sh'
 alias setupbash='. "$DOTFILES"/bash/setup-bash.sh'
 
-# Bash Styling
-export PS1='\n${debian_chroot:+($debian_chroot)}\e[0;32m\u\e[m \e[01;35m\w\e[m\n\$ '
 
 
 # -----------------------------------------------------------------------------
@@ -96,6 +106,33 @@ alias goirn="go build -i -o"
 
 # Jykell
 alias bejs="bundle exec jekyll serve"
+
+
+
+# -----------------------------------------------------------------------------
+# Interaction -- Internet, Fun, Files
+# -----------------------------------------------------------------------------
+
+# Internet
+alias ping='ping -c 5'              # Don't let ping go on forever
+alias pingg='ping -c 5 google.com'  # Is this thing on?
+alias pinggg='ping -c 5 8.8.8.8'    # Check 2
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com' # Say my name
+
+# Who's permission is denied?
+alias fucking='sudo $(history -p !!)'
+
+# To make Smacz happy
+alias godmode='sudo !!'
+
+# Think happy thoughts...
+alias frak='fortune'
+
+# Hardware & File System
+alias lsblk='lsblk -f'  # What drives are connected?
+alias df='df -h'        # What is my disk space?
+alias diskspace='du -S | sort -n -r |more' # Who ate my space?
+alias du='du -ch'       # Available space?
 
 
 

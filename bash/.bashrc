@@ -15,23 +15,33 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Get computer config specifics
-if [ -f "$DOTFILES"/bash/.specifics.sh ]; then
-    . "$DOTFILES"/bash/.specifics.sh
+if [ -f "$DOTFILES"/bash/specifics.sh ]; then
+    . "$DOTFILES"/bash/specifics.sh
 fi
 
 # Load setup
-# if [ -f "$DOTFILES"/bash/.bash_setup.sh ]; then
-#     . "$DOTFILES"/bash/.bash_setup.sh
-# fi
+if [ -f "$DOTFILES"/bash/base.bashrc ]; then
+    . "$DOTFILES"/bash/base.bashrc
+fi
+
+# Load aliases setup
+if [ -f "$DOTFILES"/bash/setup.bash_aliases ]; then
+    . "$DOTFILES"/bash/setup.bash_aliases
+fi
 
 # Load aliases
 if [ -f "$DOTFILES"/bash/.bash_aliases ]; then
     . "$DOTFILES"/bash/.bash_aliases
 fi
 
+# Load commands
+if [ -f "$DOTFILES"/bash/commands.bash_aliases ]; then
+    . "$DOTFILES"/bash/commands.bash_aliases
+fi
+
 # Load keys
-if [ -f "$DOTFILES"/bash/.keys.sh ]; then
-    . "$DOTFILES"/bash/.keys.sh
+if [ -f "$DOTFILES"/bash/keys.sh ]; then
+    . "$DOTFILES"/bash/keys.sh
 fi
 
 
