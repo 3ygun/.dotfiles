@@ -24,7 +24,7 @@ Remove all Unstaged Tracked files ONLY  |                   | `git checkout .`
 Remove all Unstaged UnTracked files ONLY |                  | `git clean -f`
 Remove all Staged Tracked and UnStaged Tracked files ONLY |             | `git reset --hard`
 Remove all changes                  |                   | `git stash -u`
-Remove remote Git banch [more][1]     |                   | `git push <remote> --delete <branch>`
+Delete a remote branch [details][1] |                   | `git push <remote> --delete <branch>`
 
 [1]: https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-remotely
 
