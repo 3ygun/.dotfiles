@@ -2,10 +2,17 @@
 
 <!-- TOC depthFrom:2 -->
 
+- [Language Guides](#language-guides)
 - [Syntax](#syntax)
     - [Annotations](#annotations)
 
 <!-- /TOC -->
+
+## Language Guides
+
+- [~1999 Cheat Sheet](http://www.digilife.be/quickreferences/QRC/JAVA%20Programming%20Guide%20-%20Quick%20Reference.pdf)
+- [Java 8 - Features with Examples](http://www.journaldev.com/2389/java-8-features-with-examples)
+- [Generics with examples](http://www.journaldev.com/1663/java-generics-example-method-class-interface)
 
 ## Syntax
 
