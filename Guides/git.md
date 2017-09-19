@@ -43,4 +43,5 @@ Git commands for team and project work.
 
 Discription                                             | Alias             | Command
 ---                                                     | ---               | ---
-Squashes to a single commit the given <feature_branch>  | `gms`  `squish`   | `git remote show <remote>`
+Squashes to a single commit the given <feature-branch>  | `gms`  `squish`   | `git remote show <remote>`
+Download remote <branch> to local <branch>              |                   | `git checkout -b <branch> <remote>/<branch>`
