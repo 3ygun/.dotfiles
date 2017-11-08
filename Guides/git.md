@@ -45,3 +45,4 @@ Discription                                             | Alias             | Co
 ---                                                     | ---               | ---
 Squashes to a single commit the given <feature-branch>  | `gms`  `squish`   | `git remote show <remote>`
 Download remote <branch> to local <branch>              |                   | `git checkout -b <branch> <remote>/<branch>`
+Add a remote                                            |                   | `git remote add <name> <remote>`

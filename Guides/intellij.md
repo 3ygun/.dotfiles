@@ -24,3 +24,4 @@ Key | Name
 `⇧` | Shift
 `⌘` | Command
 `⌥` | Option
+`⌃` | Control Key

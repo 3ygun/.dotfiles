@@ -6,6 +6,7 @@
     - [General](#general)
     - [Computer Science Specific](#computer-science-specific)
 - [Software](#software)
+- [Reference](#reference)
 
 <!-- /TOC -->
 
@@ -15,8 +16,9 @@
 
 Command | Discription
 --- | ---
-`Command`+`Shift`+`3` | Take a screen shot
-`Command`+`Shift`+`4` | Screen grab on Mac
+`⌘`+`⇧`+`3` | Take a screen shot
+`⌘`+`⇧`+`4` | Screen grab on Mac
+`⌃`+(`←` or `→`) | Change desktops
 
 ### Computer Science Specific
 
@@ -28,3 +30,13 @@ Command | Discription
 ## Software
 
 - [Sequel Pro Keyboard Shortcuts](https://sequelpro.com/docs/get-started/keyboard-shortcuts)
+- [Windows Management with Spectacle](https://github.com/eczarny/spectacle)
+
+## Reference
+
+Key | Name
+--- | ---
+`⇧` | Shift
+`⌘` | Command
+`⌥` | Option
+`⌃` | Control Key
