@@ -35,3 +35,5 @@
 ## Good Articles
 
 - [Writing Go - Basic Reasons](https://www.commandercoriander.net/blog/2017/12/31/writing-go/)
+- [Go Maps](https://dave.cheney.net/2018/05/29/how-the-go-runtime-implements-maps-efficiently-without-generics)
+    - [Hacker News Comments](https://news.ycombinator.com/item?id=17915371)
