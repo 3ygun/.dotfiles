@@ -31,6 +31,7 @@ Command | Discription
 
 - [Sequel Pro Keyboard Shortcuts](https://sequelpro.com/docs/get-started/keyboard-shortcuts)
 - [Windows Management with Spectacle](https://github.com/eczarny/spectacle)
+- [GIF Capture](https://www.cockos.com/licecap/)
 
 ## Reference
 
