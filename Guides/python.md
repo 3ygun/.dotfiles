@@ -3,13 +3,20 @@
 <!-- TOC depthFrom:2 -->
 
 - [Functionality](#functionality)
+    - [Virtual Environment](#virtual-environment)
     - [Save pip dependencies](#save-pip-dependencies)
 - [Issue Resolution](#issue-resolution)
 
 <!-- /TOC -->
 
 ## Functionality
+
+### Virtual Environment
+
+- [python3 virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/)
+
 ### Save pip dependencies
+
 `pip freeze > requirements.txt`
 
 ## Issue Resolution
