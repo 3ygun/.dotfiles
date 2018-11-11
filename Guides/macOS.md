@@ -20,6 +20,8 @@ Command | Discription
 `⌘`+`⇧`+`4` | Screen grab on Mac
 `⌃`+(`←` or `→`) | Change desktops
 
+- Edit `/etc/paths` to add/remove things from the `$PATH`
+
 ### Computer Science Specific
 
 Command | Discription
