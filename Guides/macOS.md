@@ -25,12 +25,14 @@ Command | Discription
 Command | Discription
 --- | ---
 `softwareupdate --install -a` | Update all XCode software
-
+`open -a APPLICATION`       | Open an application from the command line (`open -a Github\ Desktop`)
 
 ## Software
 
 - [Sequel Pro Keyboard Shortcuts](https://sequelpro.com/docs/get-started/keyboard-shortcuts)
-- [Windows Management with Spectacle](https://github.com/eczarny/spectacle)
+- [Spectacle App](https://www.spectacleapp.com/)
+    - Have actual window resizing in MacOS...
+    - It's OSS [Github](https://github.com/eczarny/spectacle)
 - [GIF Capture](https://www.cockos.com/licecap/)
 
 ## Reference

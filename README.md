@@ -24,6 +24,7 @@ My .dotfiles for aliases, profiles, [guides](Guides/) and sanity
     - [PowerShell README.md](PowerShell/)
 
 ## Parts
+
 ### Terminal Usage
 
 Including aliases, profiles and keys
