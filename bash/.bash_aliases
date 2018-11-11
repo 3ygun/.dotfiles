@@ -1,4 +1,14 @@
 # -----------------------------------------------------------------------------
+# Bash -- Variables
+# -----------------------------------------------------------------------------
+
+# Init to "" (e.g. false)
+isMacOS=""
+if [[ $OSTYPE == *"darwin"* ]]; then
+    isMacOS="true"
+fi
+
+# -----------------------------------------------------------------------------
 # Bash -- Movement and Listing
 # -----------------------------------------------------------------------------
 
@@ -9,17 +19,27 @@ alias c.="cd .."
 alias cu='cd ..'
 
 # ls aliases
-alias ll='ls -ahlF --group-directories-first --color=auto'
-alias la='ls -lA   --group-directories-first --color=auto'
-alias l='ls  -CF   --group-directories-first --color=auto'
-alias ls='ls -lhA  --group-directories-first --color=auto'
+if $isMacOS; then
+    # MacOS -- ls aliases because they don't allow colors :(
+    alias ll='ls -ahlF'
+    alias la='ls -lA'
+    alias l='ls  -CF'
+    alias ls='ls -ahlF'
+else
+    alias ll='ls -ahlF --group-directories-first --color=auto'
+    alias la='ls -lA --group-directories-first --color=auto'
+    alias l='ls  -CF --group-directories-first --color=auto'
+    alias ls='ls -lhA --group-directories-first --color=auto'
+fi
 
 # Directory Work
 alias lsd='ls -d */ --color=auto' # List folders below
 alias mkdir='mkdir -pv'           # Make parent directories as needed w/ output
 
 # Copy
-alias cp='cp -iar' # Hidden files and folders too
+if ! $isMacOS; then
+    alias cp='cp -iar' # Hidden files and folders too
+fi
 
 # Confirm 'mv' and 'rm'
 alias rm='rm -i'
