@@ -95,10 +95,14 @@ alias gch="git checkout"
 alias gpl="git pull"
 alias gph="git push"
 alias gcl="git clone"
+# Git >> Rebase
+alias grc="git rebase --continue"
+alias grs="git rebase --skip"
 # Git >> Special Operations
 alias gms="git merge --squash"  # Squashes to a single commit the given <feature_branch>
 alias grmc="git rm --cached"    # Destages the given <file>
 alias gclf="git checkout --"    # Clear the given <file> of changes
+alias gsp="git stash push"      # Stash all changes
 # Git >> Total Names
 alias gpull="gpl"
 alias gpush="gph"
