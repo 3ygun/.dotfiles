@@ -46,3 +46,40 @@ function restart()  { sudo systemctl restart $@; }
 function status()   { sudo systemctl status $@; }
 function enable()   { sudo systemctl enable $@; }
 function disable()  { sudo systemctl disable $@; }
+
+# Git
+
+# Runs through all branchs and prompts the user to delete them 
+function gitbranchdelete() {
+    echo "Commands after branch prompt:"
+    echo " y or yes -> to delete the branch"
+    echo " exit     -> to exit early"
+    echo ""
+    echo "Delete branch?"
+
+    # Help provided from https://stackoverflow.com/questions/41650892/why-redirect-stdin-inside-a-while-read-loop-in-bash
+    exec 3</dev/tty || exec 3<&0 # Make FD 3 point to the TTY or stdin (as fallback)
+
+    while branches= read -r branch; do
+        # Prompt to delete the branch
+        # Read the response from stdin copied from FD 3
+        read -p "$branch ? " response <&3
+
+        case $response in
+        "y" | "yes")
+            git branch -D $branch
+            ;;
+        "exit")
+            break # Exit the loop early
+            ;;
+        *)
+            # Do nothing with this branch
+            ;;
+        esac
+
+        # echo "" # New line
+    done < <(git branch)
+
+    exec 3<&- # Close FD 3 when done
+}
+alias gbd="gitbranchdelete"
