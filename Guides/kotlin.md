@@ -26,6 +26,7 @@
     - SQL processing which has more stars than Exposed BUT doesn't look as slick
 - [Scientist](https://github.com/spoptchev/scientist)
     - Kotlin copy of [Github's Scientist library](https://github.com/github/scientist) and is linked off the main repo
+    - Has `.conductibleIf` which meets Jon's requirements to "Allow conditionally turn off the experiements"
     - Gives better docs than the Java version [Scientist4J](https://github.com/rawls238/Scientist4J)
 
 - [Arrow](https://arrow-kt.io/)

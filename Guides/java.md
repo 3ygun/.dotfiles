@@ -6,6 +6,7 @@
 - [Syntax](#syntax)
     - [Streams](#streams)
     - [Annotations](#annotations)
+        - [Code Gen with Annotations](#code-gen-with-annotations)
 - [Optimizations](#optimizations)
 - [Testing](#testing)
 - [Profilling](#profilling)
@@ -63,6 +64,9 @@
 ## Bentchmarking
 
 Frameworks:
+
+- [VisualVM](https://visualvm.github.io/)
+    - "All-in-One Java Troubleshooting Tool :: VisualVM is a visual tool integrating commandline JDK tools and lightweight profiling capabilities. Designed for both development and production time use."
 - JMH (Java Microbenchmark Harness) [see](http://openjdk.java.net/projects/code-tools/jmh/)
     - What the OpenJDK team uses [see discussion](https://groups.google.com/forum/#!topic/mechanical-sympathy/m4opvy4xq3U)
     - Examples:
