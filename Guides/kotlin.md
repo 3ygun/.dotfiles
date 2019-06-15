@@ -5,6 +5,7 @@
 - [Useful Libraries](#useful-libraries)
 - [IDE Support](#ide-support)
 - [Cool Stuff](#cool-stuff)
+- [Install](#install)
 
 <!-- /TOC -->
 
@@ -16,6 +17,9 @@
 - [Ktor](https://ktor.io/)
     - "Framework for quickly creating connected applications in Kotlin with minimal effort" - their repo
     - [Github](https://github.com/ktorio/ktor)
+    - References
+        - [RESTful Kotlin with Ktor and Exposed](https://ryanharrison.co.uk/2018/04/14/kotlin-ktor-exposed-starter.html)
+        - [Ktor with AsyncDB stuff](https://github.com/TechEmpower/FrameworkBenchmarks/tree/master/frameworks/Kotlin/ktor)
 - [Koin](https://insert-koin.io/)
     - Dependency injection which reads as more [Dagger](https://google.github.io/dagger/) than [Spring](https://spring.io/)
     - [Github](https://github.com/InsertKoinIO/koin)
@@ -24,6 +28,8 @@
     - Written by Jetbrains and looks siiiiiick
 - [Requery](https://github.com/requery/requery)
     - SQL processing which has more stars than Exposed BUT doesn't look as slick
+- [Ktorm](https://ktorm.liuwj.me/)
+    - Kotlin ORM with SQL DSL
 - [Scientist](https://github.com/spoptchev/scientist)
     - Kotlin copy of [Github's Scientist library](https://github.com/github/scientist) and is linked off the main repo
     - Has `.conductibleIf` which meets Jon's requirements to "Allow conditionally turn off the experiements"
@@ -51,6 +57,12 @@
 - [Krangl](https://github.com/holgerbrandl/krangl)
     - Pandas in Kotlin
     - Really cool stuff...
+- [Kotlin Data Science Resources](https://github.com/thomasnield/kotlin-data-science-resources)
+
+- [JDA](https://github.com/mcdh/jda)
+    - An adapter API for JetBrains' Java-Decompiler port of FernFlower, written in Kotlin
+
+- [ts2kt - Converter of TypeScript definition files to Kotlin external declarations](https://github.com/Kotlin/ts2kt)
 
 ## IDE Support
 
@@ -60,3 +72,8 @@
 
 - [Sourcerer App](https://sourcerer.io/start)
     - "Sourcerer app makes a visual profile from your GitHub and git repositories" - [their repo](https://github.com/sourcerer-io/sourcerer-app)
+
+## Install
+
+- [Kotlin CLI](https://kotlinlang.org/docs/tutorials/command-line.html)
+- [Install OpenJDK on MacOS](https://solarianprogrammer.com/2018/09/28/installing-openjdk-macos/)
