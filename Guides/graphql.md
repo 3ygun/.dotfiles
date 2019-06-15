@@ -20,6 +20,7 @@
 ## Good Discussions
 
 - [GraphQL API Designe (Github Guy)](https://medium.com/@__xuorig__)
+- [Schema Diagram](https://raw.githubusercontent.com/sogko/graphql-shorthand-notation-cheat-sheet/master/graphql-shorthand-notation-cheat-sheet.png)
 
 ## Implementation
 

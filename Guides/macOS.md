@@ -31,11 +31,16 @@ Command | Discription
 
 ## Software
 
+- [Homebrew](https://brew.sh/)
+    - "The missing package manager for macOS"
 - [Sequel Pro Keyboard Shortcuts](https://sequelpro.com/docs/get-started/keyboard-shortcuts)
 - [Spectacle App](https://www.spectacleapp.com/)
     - Have actual window resizing in MacOS...
     - It's OSS [Github](https://github.com/eczarny/spectacle)
 - [GIF Capture](https://www.cockos.com/licecap/)
+- [OpenJDK](https://jdk.java.net/11/)
+    - Install [OpenJDK 11 on macOS Mojave](https://solarianprogrammer.com/2018/09/28/installing-openjdk-macos/)
+    - Setting [JAVA_HOME](http://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/)
 
 ## Reference
 

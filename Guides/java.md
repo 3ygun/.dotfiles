@@ -12,6 +12,7 @@
 - [Profilling](#profilling)
 - [Bentchmarking](#bentchmarking)
 - [Win arguments](#win-arguments)
+- [Cool Projects](#cool-projects)
 
 <!-- /TOC -->
 
@@ -87,3 +88,8 @@ Frameworks:
     - Concatenation = 134 millisecond
     - String Builder = 117 millisecond
 - [Efficiency of Java double brace initialization](https://stackoverflow.com/questions/924285/efficiency-of-java-double-brace-initialization)
+
+## Cool Projects
+
+- [Quincy - QUIC implementation in Java/Netty](https://github.com/protocol7/quincy)
+    - [QUIC](https://en.wikipedia.org/wiki/QUIC)

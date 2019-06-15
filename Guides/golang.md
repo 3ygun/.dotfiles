@@ -9,6 +9,7 @@
 
 ## Preformace
 
+- [Go Pref Book](https://github.com/dgryski/go-perfbook)
 - [High Preformance Go](https://go-talks.appspot.com/github.com/davecheney/high-performance-go-workshop/high-performance-go-workshop.slide)
     - [Code](https://github.com/davecheney/high-performance-go-workshop)
     - Great slide deck of details regarding golang preformance, profiling, pprof, etc.
