@@ -67,6 +67,10 @@
 ## IDE Support
 
 - [VSCode Extension](https://github.com/mathiasfrohlich/vscode-kotlin)
+- VSCode
+    - [Kotlin Language Server](https://github.com/fwcd/KotlinLanguageServer)
+    - [Kotlin Debug Adapter](https://github.com/fwcd/KotlinDebugAdapter)
+    - [Kotlin Quick Start](https://github.com/fwcd/KotlinQuickStart)
 
 ## Cool Stuff
 
