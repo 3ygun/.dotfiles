@@ -5,6 +5,7 @@
 - [Useful Libraries](#useful-libraries)
 - [IDE Support](#ide-support)
 - [Cool Stuff](#cool-stuff)
+- [Interesting Code Samples](#interesting-code-samples)
 - [Install](#install)
 
 <!-- /TOC -->
@@ -34,6 +35,16 @@
     - Kotlin copy of [Github's Scientist library](https://github.com/github/scientist) and is linked off the main repo
     - Has `.conductibleIf` which meets Jon's requirements to "Allow conditionally turn off the experiements"
     - Gives better docs than the Java version [Scientist4J](https://github.com/rawls238/Scientist4J)
+- [Kotlin Test](https://github.com/kotlintest/kotlintest)
+    - An absolute superset of [Spec](https://spekframework.org/) so don't care about the spec libary
+- gRPC (Google RPC) libraries
+    - [GRPC Kotlin](https://github.com/rouzwawi/grpc-kotlin)
+    - [KROTO](https://github.com/marcoferrer/kroto-plus)
+    - Which?
+        - The KROTO one seems to allow defining customer generation code easier so it's probably better to learn long term. The other one appears to have a nice default?
+- SQL
+    - [jasync-sql](https://github.com/jasync-sql/jasync-sql)
+    - [r2dbc Postgresql](https://github.com/r2dbc/r2dbc-postgresql)
 
 - [Arrow](https://arrow-kt.io/)
     - "Functional companion to Kotlin's Standard Library" - the repo
@@ -42,13 +53,13 @@
 - [Javalin](https://javalin.io/)
     - Simple web framework for Java and Kotlin
     - [Github](https://github.com/tipsy/javalin)
-- [Spec](https://spekframework.org)
+- [Spec](https://spekframework.org) **This is trash see "Kotlin Test" instead**
     - Gherkin (Cucumber) or Jasmine (that JavaScript thing) style tests
     - [Github](https://github.com/spekframework/spek/)
     - This extension on Spec has what looks to be the Spock tables [Aspen](https://github.com/dam5s/aspen)
 - [Mockk](https://mockk.io)
     - Spock style mocking
-    - [Github]9-https://github.com/mockk/mockk)
+    - [Github](https://github.com/mockk/mockk)
 
 - [KGraphQL](https://github.com/pgutkowski/KGraphQL)
     - Pure Kotlin with only one instace of the Schema (which is in code)
@@ -76,6 +87,12 @@
 
 - [Sourcerer App](https://sourcerer.io/start)
     - "Sourcerer app makes a visual profile from your GitHub and git repositories" - [their repo](https://github.com/sourcerer-io/sourcerer-app)
+- [PartiQL (Kotlin impl)](https://github.com/partiql/partiql-lang-kotlin)
+    - Amazon project which is defined as: "PartiQL is based on SQL92 and has added support for working with schemaless hierarchical data"
+
+## Interesting Code Samples
+
+- [`generateSequence`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/generate-sequence.html)
 
 ## Install
 
