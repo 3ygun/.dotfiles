@@ -16,7 +16,7 @@ function terminal_git_status() {
             changeSign=' : *'
         fi
 
-        local branch="$(git status -s -b | grep -oEim 1 '## (\w*)' | cut -f2- -d ' ')"
+        local branch="$(git status -s -b | grep -oEim 1 '## (.+)\.\.\.' | cut -d ' ' -f 2 | cut -d . -f 1)"
         if [[ -n $branch ]]; then # Affirm there is a branch first? Validates git existence
             echo "($branch$changeSign)"
         fi
