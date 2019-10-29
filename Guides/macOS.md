@@ -4,6 +4,7 @@
 
 - [Commands](#commands)
     - [General](#general)
+    - [Cli](#cli)
     - [Computer Science Specific](#computer-science-specific)
 - [Software](#software)
 - [Reference](#reference)
@@ -21,6 +22,11 @@ Command | Discription
 `⌃`+(`←` or `→`) | Change desktops
 
 - Edit `/etc/paths` to add/remove things from the `$PATH`
+
+### Cli
+
+- Save unused command `ctrl` + `u`
+- Recall unused command `ctrl` + `y`
 
 ### Computer Science Specific
 
