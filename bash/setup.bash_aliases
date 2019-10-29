@@ -9,14 +9,17 @@
 function terminal_git_status() {
     # Has git? Copied from https://stackoverflow.com/questions/2180270/check-if-current-directory-is-a-git-repository
     if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+        # Compute the branch and change set
+        local gitStatus="$(git status -s -b)"
+        
         # Check if there are changes to commit?
-        local change="$(git status -s -b | grep -oEm 1 'M\s+')"
+        local change="$(echo $gitStatus | grep -oEm 1 'M\s+')"
         local changeSign=''
         if [[ -n $change ]]; then
             changeSign=' : *'
         fi
 
-        local branch="$(git status -s -b | grep -oEim 1 '## (.+)\.\.\.' | cut -d ' ' -f 2 | cut -d . -f 1)"
+        local branch="$(echo $gitStatus | grep -oEim 1 '## (.+)\.\.\.' | cut -d ' ' -f 2 | cut -d . -f 1)"
         if [[ -n $branch ]]; then # Affirm there is a branch first? Validates git existence
             echo "($branch$changeSign)"
         fi
