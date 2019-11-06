@@ -25,8 +25,8 @@ if [ -f "$DOTFILES"/bash/base.bashrc ]; then
 fi
 
 # Load aliases setup
-if [ -f "$DOTFILES"/bash/setup.bash_aliases ]; then
-    . "$DOTFILES"/bash/setup.bash_aliases
+if [ -f "$DOTFILES"/bash/setup.sh ]; then
+    . "$DOTFILES"/bash/setup.sh
 fi
 
 # Load aliases
@@ -35,8 +35,8 @@ if [ -f "$DOTFILES"/bash/.bash_aliases ]; then
 fi
 
 # Load commands
-if [ -f "$DOTFILES"/bash/commands.bash_aliases ]; then
-    . "$DOTFILES"/bash/commands.bash_aliases
+if [ -f "$DOTFILES"/bash/commands.sh ]; then
+    . "$DOTFILES"/bash/commands.sh
 fi
 
 # Load keys
