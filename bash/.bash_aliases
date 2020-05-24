@@ -25,6 +25,9 @@ if $isMacOS; then
     alias la='ls -lA'
     alias l='ls  -CF'
     alias ls='ls -ahlF'
+
+    # MacOS -- doesn't have `tree` by default? Add a close enough equivalent.
+    alias tree='find . -print'
 else
     alias ll='ls -ahlF --group-directories-first --color=auto'
     alias la='ls -lA --group-directories-first --color=auto'

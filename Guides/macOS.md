@@ -27,6 +27,7 @@ Command | Discription
 
 - Save unused command `ctrl` + `u`
 - Recall unused command `ctrl` + `y`
+- Find who's using the port? `lsof -i :8200` --> `kill X` (process that appears from other command)
 
 ### Computer Science Specific
 
