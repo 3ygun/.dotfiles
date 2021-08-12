@@ -102,6 +102,7 @@
 ## Interesting Code Samples
 
 - [`generateSequence`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/generate-sequence.html)
+- [Bitwise operations with examples](https://www.programiz.com/kotlin-programming/bitwise)
 
 ## Install
 
