@@ -8,6 +8,8 @@
     - [Computer Science Specific](#computer-science-specific)
 - [Software](#software)
 - [Reference](#reference)
+- [Troubleshooting](#troubleshooting)
+    - [Stop receiving "Your disk is almost full" notification](#stop-receiving-your-disk-is-almost-full-notification)
 
 <!-- /TOC -->
 
@@ -57,3 +59,22 @@ Key | Name
 `⌘` | Command
 `⌥` | Option
 `⌃` | Control Key
+
+## Troubleshooting
+
+### Stop receiving "Your disk is almost full" notification
+
+Based on [Silencing “Your disk is almost full” notification](https://apple.stackexchange.com/a/294132) I ran the following on Mojave 10.14.6
+
+```bash
+# See the settings available
+grep -A6 debugLog <(strings $(find /System/Library/PrivateFrameworks -name diskspaced -print -quit))
+
+# Let the notification timer to be crazy long in the future
+defaults write com.apple.diskspaced lowSpaceTimer 6000000
+
+# Restart the application that sends the notification (2 ways I used both)
+killall diskspaced
+
+launchctl stop com.apple.diskspaced && launchctl start com.apple.diskspaced
+```
