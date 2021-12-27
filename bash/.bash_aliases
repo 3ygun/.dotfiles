@@ -8,6 +8,11 @@ if [[ $OSTYPE == *"darwin"* ]]; then
     isMacOS="true"
 fi
 
+# Read in commands for GitHub
+if [ -f .commands.sh ]; then
+    . .commands.sh
+fi
+
 # -----------------------------------------------------------------------------
 # Bash -- Movement and Listing
 # -----------------------------------------------------------------------------
