@@ -8,3 +8,10 @@ specifics.ps1
 
 # Notes
 notes/
+
+# Remove the stuff in there before removing
+Guides/zuora.md
+Guides/updox.md
+Guides/other/*
+Guides/test/*
+.DS_Store

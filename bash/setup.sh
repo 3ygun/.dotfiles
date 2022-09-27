@@ -22,12 +22,25 @@ function terminal_git_status() {
         local branch="$(echo $gitStatus | grep -oEim 1 '## (.+)\.\.\.' | cut -d ' ' -f 2 | cut -d . -f 1)"
         if [[ -n $branch ]]; then # Affirm there is a branch first? Validates git existence
             echo "($branch$changeSign)"
-        fi
+        fi   
     fi
 }
 
 # Prompt Styling
-export PS1='\n\e[32m\u\e[m\e[1;35m@\e[m\e[32m\h\e[m \e[1;35m\w\a\e[1;37m $(terminal_git_status) \e[m\n\$ '
+# https://stackoverflow.com/a/9911082/6480404
+if [ -n "$BASH_VERSION" ]; then
+    export PS1='\n\e[32m\u\e[m\e[1;35m@\e[m\e[32m\h\e[m \e[1;35m\w\a\e[1;37m $(terminal_git_status) \e[m\n\$ '
+    export promptStyle="bash"
+elif [ -n "$ZSH_VERSION" ]; then
+    # https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
+    # https://superuser.com/a/986820
+    PROMPT_NEWLINE=$'\n'
+    PROMPT="${PROMPT_NEWLINE}%F{blue}%n%f@%F{blue}%m%f %/${PROMPT_NEWLINE}%# "
+    export promptStyle="zsh"
+else
+    # No prompt style currently
+    export promptStyle="unknown"
+fi
 
 # Load Colors
 if [ -x /usr/bin/dircolors ]; then

@@ -40,12 +40,16 @@ function extract () {
 }
 
 # New for systemd
-function start()    { sudo systemctl start $@; }
-function stop()     { sudo systemctl stop $@; }
-function restart()  { sudo systemctl restart $@; }
-function status()   { sudo systemctl status $@; }
-function enable()   { sudo systemctl enable $@; }
-function disable()  { sudo systemctl disable $@; }
+# 
+# Not available on MacOS M1
+if [[ -n $(command -v systemctl) ]]; then
+    function start()    { sudo systemctl start $@; }
+    function stop()     { sudo systemctl stop $@; }
+    function restart()  { sudo systemctl restart $@; }
+    function status()   { sudo systemctl status $@; }
+    function enable()   { sudo systemctl enable $@; }
+    function disable()  { sudo systemctl disable $@; }
+fi
 
 # Git
 
@@ -63,7 +67,8 @@ function gitbranchdelete() {
     while branches= read -r branch; do
         # Prompt to delete the branch
         # Read the response from stdin copied from FD 3
-        read -p "$branch ? " response <&3
+        echo -n "$branch ? "
+        read response <&3
 
         case $response in
         "y" | "yes")
