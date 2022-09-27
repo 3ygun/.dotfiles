@@ -2,7 +2,8 @@
 
 <!-- TOC depthFrom:2 -->
 
-- [Helpful Stuff](#helpful-stuff)
+- [Git - "3 letters of complexity"](#git---3-letters-of-complexity)
+  - [Helpful Stuff](#helpful-stuff)
     - [Undo](#undo)
     - [Debugging](#debugging)
     - [Rebasing](#rebasing)
@@ -11,6 +12,7 @@
 <!-- /TOC -->
 
 ## Helpful Stuff
+
 ### Undo
 
 I find the need to undo things here are easy ways!
@@ -38,6 +40,8 @@ Show how <remote> is configured locally |               | `git remote show <remo
 Show all <remote>s                      |               | `git remote -v`
 Fix misconfigured <remote> per branch   |               | `git branch <branch> -u <remote>/<branch>`
 Should all <branch> <remote>            |               | `git branch -vv`
+Find string in history                  |               | `git log -S'bar'`
+Find string in history of single file   |               | `git log -S'bar' -- foo.rb`
 
 ### Rebasing
 
