@@ -85,7 +85,11 @@ alias setupbash='. "$DOTFILES"/bash/setup-bash.sh'
 alias dk="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
-alias dkrmall="docker rm $(docker ps -a -q)"
+function dkrmall() {
+    docker rm $(docker ps -a -q)
+}
+
+alias dkrmall="dkrmall()"
 
 # Git
 alias gs="git status"
